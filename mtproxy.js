@@ -38,7 +38,7 @@ function reverseInplace (buffer) {
   }
 }
 
-function create_idle_server(id, ip) {
+function create_idle_server(mtprotohelper, ip) {
 	let client = new net.Socket();
 	client.setKeepAlive(true);
 
